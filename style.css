@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main Style */
+body {
+  background-color: #f2ebe3;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body p {
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card-body h1 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  line-height: normal;
+  margin-bottom: 20px;
+  color: #1c232b;
+}
+
+.card-category {
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+
+.card-price {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.card-diskon-price {
+  color: #3c8067;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.card-normal-price {
+  text-decoration: line-through;
+}
+
+.card-body button {
+  background-color: #3c8067;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding: 16px 0;
+  color: white;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.card-body button:hover {
+  background-color: #2b5545;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .card-img {
+    height: 250px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+  }
+
+  .card-img,
+  .card-body {
+    width: 300px;
+    flex: none;
+  }
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
